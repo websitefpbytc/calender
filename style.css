@@ -1,0 +1,115 @@
+html{
+    scroll-behavior: smooth;
+    width: 70%;
+}
+body{
+    background-color: #ffffe0;
+}
+h1{
+    color: #fff;
+    font-weight: 300;
+    background-color: #4163f8;
+    font-family:'Times New Roman', Times, serif ;
+    margin: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 570px;
+}
+h2{
+    text-align: center;
+    margin: 5px;
+}
+nav{
+    font-variant: small-caps;
+    font-weight: 900;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #a525;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    font-size: x-large;
+    overflow: scroll;
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+nav a{
+    display: block;
+    color: #0000ff;
+    background-color: #fab07c;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 5px;
+    padding-left: 50px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #fc9d9d;
+}
+section{
+    display: inline-block;
+    position: relative;
+    left: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+table{
+    border-spacing: 0;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #1d1515;
+    border-radius: 0px 0px 15px 15px;
+}
+caption{
+    text-transform: uppercase;
+    font-size: 150%;
+    background-color: #dcdcdc;
+    border-radius: 15px 15px 0px 0px;
+}
+td{
+    height: 70px;
+    font-size: larger;
+    text-align: center;
+    width: 70px;
+    border: 1px solid;
+}
+
+tr:nth-child(odd){
+    background-color: #adddfc;
+}
+tr:nth-child(even){
+    background-color: #e0ffff;
+}
+th{
+    height: 30px;
+    width: fit-content;
+    background-color: #dffffce5;
+    border-bottom: 1px solid #1d1515;
+}
+td.op{
+    background-color: #ffffff;
+    background-image: url('image/background.jpg');
+    opacity: 0.8;
+}
+tr:last-child>td:last-child{
+    border-radius: 0px 0px 12px 0px;
+}
+tr:last-child>td:first-child{
+    border-radius: 0px 0px 0px 12px;
+}
+td:has(span){
+    color: #ff0000;
+    font-weight: 110;
+}
+span{
+    visibility: hidden;
+    display: none;
+    color: #ff0000;
+}
+td:hover>span{
+    visibility: visible;
+    display: block;
+}
